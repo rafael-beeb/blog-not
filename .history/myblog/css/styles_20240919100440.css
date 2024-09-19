@@ -1,0 +1,79 @@
+nav {
+    background-color: #f87b7b; /* Example background color */
+    padding: 10px; /* Add some padding */
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px; /* Space around the links */
+    color: #333; /* Link color */
+}
+
+nav a:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+nav img:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+nav img{
+    width: 30px;
+    margin-left: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 20px; /* Espaço entre os itens da grade */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.grid-item {
+    border: 1px solid #ccc; /* Borda opcional */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.item-content {
+    display: flex; /* Usar Flexbox para alinhar a imagem e o texto */
+}
+
+.item-content img {
+    max-width: 100px; /* Defina uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; /* Coloca o título e o parágrafo em coluna */
+    transform: ;
+}
+
+.text-content h1 {
+    margin: 0; 
+}
+
+.text-content p {
+    margin: 0;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Uma coluna */
+    }
+
+    .item-content {
+        flex-direction: row; /* Mantém a imagem à esquerda e o texto à direita */
+        align-items: flex-start; /* Alinha o texto ao topo */
+    }
+
+    .item-content img {
+        margin-right: 0; /* Remove margem à direita da imagem */
+        margin-bottom: 10px; /* Adiciona espaço abaixo da imagem */
+    }
+}

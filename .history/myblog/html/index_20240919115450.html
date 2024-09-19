@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const title = document.getElementById(".title");
+      const description = document.getElementById(".description");
+
+      const limitTitle = 40; // Limite de caracteres para o h1
+      const limitDescription = 100; // Limite de caracteres para o p
+
+      if (title.textContent.length > limitTitle) {
+        title.textContent = title.textContent.slice(0, limitTitle) + "...";
+      }
+
+      if (description.textContent.length > limitDescription) {
+        description.textContent =
+          description.textContent.slice(0, limitDescription) + "...";
+      }
+    });
+  </script>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+
+        <img src="../free-wifi.png" alt="" />
+      </nav>
+    </header>
+    <main>
+      <section class="grid-container">
+        <div class="grid-item">
+          <a href="#link1" class="item-content">
+            <img src="../imagem1.jpg" alt="Descrição da imagem 1" />
+            <div class="text-content">
+              <h1 class="title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                nihil, accusantium beatae eveniet quis minima esse cum quas at
+                officiis sapiente? Sed hic, asperiores autem exercitationem ad
+                eos. Labore, ea.
+              </h1>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus molestiae voluptate ea, aspernatur cum laboriosam ad
+                eveniet vero nesciunt totam facilis consequatur rem aut quaerat?
+                Veniam ex rem atque. Numquam?
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="#link2" class="item-content">
+            <img src="../imagem1.jpg" alt="Descrição da imagem 1" />
+            <div class="text-content">
+              <h1 class="title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                nihil, accusantium beatae eveniet quis minima esse cum quas at
+                officiis sapiente? Sed hic, asperiores autem exercitationem ad
+                eos. Labore, ea.
+              </h1>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus molestiae voluptate ea, aspernatur cum laboriosam ad
+                eveniet vero nesciunt totam facilis consequatur rem aut quaerat?
+                Veniam ex rem atque. Numquam?
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="#link4" class="item-content">
+            <img src="../imagem1.jpg" alt="Descrição da imagem 1" />
+            <div class="text-content">
+              <h1 class="title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                nihil, accusantium beatae eveniet quis minima esse cum quas at
+                officiis sapiente? Sed hic, asperiores autem exercitationem ad
+                eos. Labore, ea.
+              </h1>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus molestiae voluptate ea, aspernatur cum laboriosam ad
+                eveniet vero nesciunt totam facilis consequatur rem aut quaerat?
+                Veniam ex rem atque. Numquam?
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="#link4" class="item-content">
+            <img src="../imagem2.jpg" alt="Descrição da imagem 2" />
+            <div class="text-content">
+              <h1 class="title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                nihil, accusantium beatae eveniet quis minima esse cum quas at
+                officiis sapiente? Sed hic, asperiores autem exercitationem ad
+                eos. Labore, ea.
+              </h1>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus molestiae voluptate ea, aspernatur cum laboriosam ad
+                eveniet vero nesciunt totam facilis consequatur rem aut quaerat?
+                Veniam ex rem atque. Numquam?
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+nav {
+    background-color: #f87b7b; /* Example background color */
+    padding: 10px; /* Add some padding */
+}
+
+nav a {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 5px 10px; /* Space around the links */
+    color: #333; /* Link color */
+}
+
+nav a:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+nav img{
+    width: 20px;
+    transform: translateY(6px);
+    left: 50px;
+
+}

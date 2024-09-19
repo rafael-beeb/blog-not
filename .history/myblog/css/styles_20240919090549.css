@@ -1,0 +1,15 @@
+nav {
+    background-color: #f8f8f8; /* Example background color */
+    padding: 10px; /* Add some padding */
+}
+
+nav a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #333; /* Link color */
+}
+
+nav a:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
