@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alinha os filhos (nav, main, footer) em coluna */
+}
+
+nav {
+    background-color: #f87b7b; /* Exemplo de cor de fundo */
+    padding: 10px; /* Adiciona um pouco de padding */
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px; /* Espaço ao redor dos links */
+    color: #333; /* Cor dos links */
+    
+}
+
+nav a:hover {
+    background-color: #e0e0e0; /* Muda o fundo ao passar o mouse */
+    border-radius: 5px; /* Cantos arredondados ao passar o mouse */
+}
+
+nav img:hover {
+    background-color: #e0e0e0; /* Muda o fundo ao passar o mouse */
+    border-radius: 5px; /* Cantos arredondados ao passar o mouse */
+}
+
+nav img {
+    width: 30px;
+    margin-left: auto;
+}
+
+main {
+    flex: 1; /* Faz com que o main ocupe o espaço restante */
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 20px; /* Espaço entre os itens da grade */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.grid-item {
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites */
+    border: 1px solid #ccc; /* Borda opcional */
+    padding: 5px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo para o item */
+}
+
+.item-content {
+    display: flex; /* Usar Flexbox para alinhar a imagem e o texto */
+    text-decoration: none;
+    color: inherit;
+}
+
+.item-content img {
+    width: 100px; /* Defina uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    border: solid #333 2px;
+    display: block;
+}
+
+.text-content h1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin: 0; 
+}
+
+.text-content p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;              /* Esconde o texto que excede o limite */
+    text-overflow: ellipsis;  
+    margin: 0;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    height: 15%; 
+    background-color: #f0f0f0; /* Cor de fundo para o footer */
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Uma coluna */
+    }
+
+    .item-content {
+        flex-direction: row; /* Mantém a imagem à esquerda e o texto à direita */
+        align-items: flex-start; /* Alinha o texto ao topo */
+    }
+
+    .item-content img {
+        margin-right: 5px; /* Remove margem à direita da imagem */
+        margin-bottom: 10px; /* Adiciona espaço abaixo da imagem */
+    }
+}
